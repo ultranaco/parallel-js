@@ -1,0 +1,35 @@
+{
+  "name": "@ultranaco/parallel",
+  "version": "0.0.1",
+  "description": "Parallel is a library to spread asynchronous task or promises, with deggree concurrency",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "prepublish":"tsc",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ultranaco/parallel-js.git"
+  },
+  "keywords": [
+    "parallel",
+    "concurrent",
+    "concurrency",
+    "async",
+    "asynchronous"
+  ],
+  "author": "ultranaco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ultranaco/parallel-js/issues"
+  },
+  "homepage": "https://ultranaco/briefcase/parallel-js",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@types/node": "^14.0.14",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  }
+}

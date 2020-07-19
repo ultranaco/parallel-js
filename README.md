@@ -1,2 +1,5 @@
 # parallel-js
-Parallel is a library to spread concurrent task or promises with deggree concurrency
+
+Parallel is a library to spread asynchronous task or promises, with deggree concurrency
+
+
