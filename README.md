@@ -2,6 +2,14 @@
 
 `Parallel` is a Node.js library to spread concurrent task or promises, with deggree concurrency
 
+
+## Install
+
+``` console
+$ npm install @ultranaco/parallel
+```
+
+
 ## How it works
 
 The example code below invokes 10 "heavy workloads" and execute 3 tasks simultaneously, `Parallel` doesn't enqueue tasks to avoid memory leaks rather lock the main execution until one task is released and next task get into execution process.
