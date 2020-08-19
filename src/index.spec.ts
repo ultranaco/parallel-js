@@ -2,15 +2,15 @@ import { Parallel } from './index';
 jest.setTimeout(9000);
 let timeout = 2000;
 
-test("Test 1: 3 tasks simultaneously over 10 invokes", async (done)=> {
+test("Test 1: 3 tasks simultaneously over 10 invokes", async ()=> {
   const parallel = new Parallel(3);
   for (let i = 0; i < 9 ;i++) {
     await parallel.exec(heavyWork, i);
   }
 
-  await expect(parallel.wait()).resolves.toBeUndefined();
-  console.log(parallel.tasks);
-  done();
+  await parallel.wait();
+
+  expect(parallel.tasks).toBe(0);
 });
 
 function heavyWork(index: Number): Promise<void>{
